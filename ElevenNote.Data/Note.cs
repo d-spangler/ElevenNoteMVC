@@ -16,12 +16,9 @@ namespace ElevenNote.Data
         public Guid OwnerId { get; set; }
 
         [Required]
-        [MaxLength(100, ErrorMessage = "There are too many characters in this field.")]
         public string Title { get; set; }
 
         [Required]
-        [Display(Name = "Your Note")]
-        [MaxLength(1000, ErrorMessage = "There are too many characters in this field.")]
         public string Content { get; set; }
 
         [Required]
